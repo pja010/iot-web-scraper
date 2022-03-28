@@ -6,21 +6,15 @@ host = socket.gethostname()
 port = 50000
 
 sock.connect((host, port))
-poem = []
-
+msgs = []
 
 while True:
     msg = sock.recv(NUM_BYTES)	
     if len(msg) == 0:
         break
-    poem.append(msg.decode('ascii'))
-
+    msgs.append(msg.decode('utf-8'))
+    print("".join(msgs[-1]))
 
 sock.close()
-print("".join(poem))
+#print("".join(msgs))
 
-'''
-msg = sock.recv(NUM_BYTES)	
-sock.close()
-print(msg.decode('ascii'))
-'''

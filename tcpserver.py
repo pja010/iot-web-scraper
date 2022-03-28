@@ -11,7 +11,7 @@ host = socket.gethostname()
 print("Host is: " + host)
 port = 50000
 
-serversocket.bind((host, port))
+serversocket.bind(("", port))
 serversocket.listen(5)	# num requests to liste to
 
 while True:
