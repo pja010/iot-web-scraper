@@ -2,6 +2,6 @@
 Project that collects the quotes from the website https://www.goodreads.com/quotes and sends them to a client running on an ESP32-S2.
 
 ## Run project:
-'python3 quotes.py'
+`python3 quotes.py`
  
  
